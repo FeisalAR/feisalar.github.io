@@ -1,0 +1,172 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../webfonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(../webfonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url(../webfonts/Montserrat-SemiBold.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: MontserratLight;
+  font-size: 1.1em;
+  background: linear-gradient(124deg, #384aba 0%, #645dc4 49%, #a1fffa 100%) no-repeat;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+.dnapic {
+  position: fixed;
+  z-index: -1;
+  width: 30%;
+  min-width: 400px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: #fafafb;
+}
+
+.nav-wrapper {
+  padding-bottom: 0;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.navbar img {
+  width: 150px;
+}
+
+.navbar .usermenu {
+  margin-left: 6%;
+}
+
+.navbar .nav-item {
+  padding-right: 35px;
+}
+
+.navbar .guestlogin {
+  padding-left: 40px;
+}
+
+.navbar .mr-sm-2, .navbar .mx-sm-2 {
+  margin: 0 !important;
+}
+
+.navbar .form-control {
+  font-style: italic;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background-color: #EEECF1;
+}
+
+.navbar .btn {
+  background-color: #44337b;
+  border: 0;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+
+.navbar .icon {
+  margin-right: 7px;
+}
+
+.vertical-nav-wrapper {
+  background-color: rgba(31, 36, 50, 0.7);
+  padding-bottom: 100%;
+  border-radius: 6px;
+}
+
+.vertical-nav-wrapper li {
+  padding-top: 10px;
+}
+
+.col-2 {
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: #EEECF1;
+  padding: 50px;
+  padding-top: 20px;
+  margin-right: 3%;
+  margin-left: 1%;
+  border-radius: 6px;
+}
+
+main h1 {
+  font-size: 1.6em;
+  font-weight: 800;
+  font-variant-caps: all-petite-caps;
+  font-family: MontserratSemiBold;
+  color: #46326f;
+}
+
+main h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-variant-caps: all-petite-caps;
+  font-family: MontserratSemiBold;
+  color: #695a85;
+}
+
+.card {
+  font-size: 0.9em;
+  border-bottom: none;
+}
+
+.card .card-body {
+  padding-bottom: 20px;
+}
+
+.card .btn {
+  background-color: #44337b;
+}
+
+.card img {
+  max-height: 30%;
+}
+
+.arsiptitle {
+  margin-top: 10px;
+}
+
+.arsip {
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+.arsip a {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
