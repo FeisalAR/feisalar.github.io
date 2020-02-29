@@ -1,2 +1,2 @@
-# feisalar.github.io
-AADS testing
+# Aplikasi AADS
+ Repo Aplikasi AADS TeMan 2020
