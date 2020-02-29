@@ -1,0 +1,268 @@
+@font-face{
+    font-family: MontserratRegular;
+    src: url(../webfonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: MontserratLight;
+    src: url(../webfonts/Montserrat-Light.ttf);
+}
+
+@font-face{
+    font-family: MontserratSemiBold;
+    src: url(../webfonts/Montserrat-SemiBold.ttf);
+}
+
+$navbarColour : linear-gradient(124deg, rgba(56,74,186,1) 0%, rgba(100,93,196,1) 49%, rgba(161,255,250,1) 100%);
+$verticalNavColour: rgba(31, 36, 50, 0.7);
+$formColour : #EEECF1;
+$btnColour: rgb(68, 51, 123);
+$h1Colour: rgb(70, 50, 111);
+$h2Colour: rgb(105, 90, 133);
+
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: MontserratLight;
+    font-size: 1.1em;
+    background: $navbarColour no-repeat;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    text-decoration: none;
+
+    @media only screen and (max-width: 576px) {
+            font-size: 0.9em;
+        }
+}
+
+
+    .btn{
+        background-color: $btnColour;
+        border: none;
+    }
+
+    i{
+        margin-right: 5px;
+    }
+
+.dnapic{
+    position: fixed;
+    z-index: -1;
+    width: 30%;
+    min-width: 400px;
+}
+
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+
+// ----------------Horizontal Navigation Bar------------------------
+.navbar li a{
+    color: rgb(250, 250, 251);
+}
+
+.nav-wrapper{    
+    padding-bottom: 0;
+    i{
+        color: white;
+    }
+}
+
+.togglebutton i{
+    padding-top: 5px !important;
+    font-size: 1.3em;    
+}
+
+.togglebutton{
+    @media only screen and (min-width: 800px) {
+            display: none;
+            visibility: hidden;            
+        }
+}
+
+.navbar-nav{
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.navbar{
+    background-color: rgba(#fff, 0);
+    padding-top: 20px;
+    padding-left: 40px;
+    img{
+        width:150px;        
+    }
+
+    .userHmenu, .guestHmenu{
+        margin-left: 6%;
+    }
+
+    .nav-item{
+        padding-right: 35px;
+    }
+
+    .guestlogin{
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .mr-sm-2, .mx-sm-2{
+        margin: 0 !important;
+    }   
+
+    .form-control{
+        font-style: italic;
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 1px;
+        background-color: $formColour;
+    }
+    .mr-3, .mx-3 {
+    margin-right: 0 !important;
+
+    .btn{
+        background-color: $btnColour;
+        border: 0;
+        border-top-left-radius: 1px;
+        border-bottom-left-radius: 1px;
+    }
+
+        .icon{
+            margin-right: 7px;
+        }
+    }
+}
+
+
+// ----------------Vertical Navigation Bar------------------------
+.vertical-nav-wrapper{
+    background-color: $verticalNavColour;
+    padding-bottom: 100%;
+    border-radius: 6px;
+
+    li{
+        padding-top: 10px;
+        @media only screen and (max-width: 576px) {
+            font-size: 1.3em;         
+        }
+    }
+
+    .navbar{
+        @media only screen and (max-width: 576px) {
+            padding:30px;       
+            padding-top: 5px;  
+        }
+    }
+}
+
+.col-2{
+    padding:0;
+}
+
+.vmenutext{
+    @media only screen and (max-width: 576px) {
+            visibility: hidden;
+            display: none;            
+    }
+}
+
+// ----------------Main Content----------------------------------
+
+.col{
+    padding: 0;
+    margin: 0;
+}
+
+    h1{
+        font-size: 1.6em;
+        font-weight: 800;
+        font-variant-caps: all-petite-caps;
+        font-family: MontserratSemiBold;
+        color: $h1Colour;
+    }
+
+    h2{
+        font-size: 1.1em;
+        font-weight: 300;
+        font-variant-caps: all-petite-caps;
+        font-family: MontserratSemiBold;
+        color: $h2Colour;
+    }
+
+main{
+    background-color: $formColour;
+    padding: 50px;
+    padding-top: 20px;;
+    margin-right: 3%;
+    margin-left: 1%;
+    border-radius: 6px; 
+
+    @media only screen and (max-width: 576px) {
+            padding: 30px;          
+        }
+}
+
+.card{
+    font-size: 0.9em;
+    border-bottom: none;
+    .card-body{
+        padding-bottom: 20px;
+    }
+    
+    .btn{
+        background-color: $btnColour;
+    }
+
+    img{
+        max-height: 30%;
+    }
+}
+
+.arsiptitle{
+    margin-top: 10px;
+    }
+
+
+.arsip{
+        background-color: #fff;
+        border-radius: 6px;
+        font-size: 0.8em;
+        a{
+            display: block;
+            padding: 10px;
+            padding-left: 20px;
+        } 
+    }
+
+form{
+    label{
+        @extend h2;
+    }
+    .form-group{
+        margin-bottom: 1.3em;
+    }
+}
+
+    #tanggallahir{
+        width: 18%;
+
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    input[type=date]::-webkit-inner-spin-button, 
+    input[type=date]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
