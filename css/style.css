@@ -482,6 +482,20 @@ main {
   font-size: 0.8em;
 }
 
+.btndetail {
+  font-size: 0.8em;
+  color: #fff;
+  padding: 4px;
+}
+
+.btndetail:hover {
+  color: #fff;
+}
+
+.statusfilterlabel {
+  font-size: 0.9em;
+}
+
 .search-div {
   display: block;
 }
@@ -507,7 +521,6 @@ main {
 }
 
 #user-list i {
-  color: #44337b;
   margin-right: 8px !important;
 }
 
@@ -583,9 +596,9 @@ form .form-group {
   width: 40%;
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 812px) {
   .tanggal {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -617,8 +630,42 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.periodefilter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.periodefilter .form-control {
+  display: inline;
+}
+
+.cetaklaporanbtn {
+  font-size: 1.0em !important;
+  float: right;
+}
+
+@media only screen and (max-width: 812px) {
+  .cetaklaporanbtn {
+    float: initial;
+    font-size: 0.8em !important;
+  }
+}
+
+.capaianlabel {
+  font-weight: bold;
+}
+
+.catatanentrycontainer {
+  margin-left: 20px;
+}
+
+.catatanentry p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
 .kategori {
-  background-color: #fafafa;
+  background-color: #fffefe;
   border-radius: 6px;
   border: 1px #d6d6d6 solid;
   padding: 20px;
@@ -704,5 +751,37 @@ input[type=number]::-webkit-outer-spin-button {
 
 .suggestdaftar a {
   color: #705aba;
+}
+
+@media print {
+  body {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  main {
+    margin: 0;
+  }
+  .col-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: 100%;
+  }
+  .periodefilter {
+    display: inline;
+  }
+  .periodefilter .form-control {
+    display: inline;
+    border: none;
+  }
+  .periodefilter .tanggal {
+    width: 25%;
+  }
+  .collapse {
+    display: block !important;
+  }
+  .list-group-item {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
